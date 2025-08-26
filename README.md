@@ -152,3 +152,31 @@ Global tracking using a static/global variable.
 - Create object obj4
 -  Observe constructor and destructor calls
 - End
+
+Program 5
+
+Aim:
+
+To write a C++ program to demonstrate the use of a parameterized constructor and a copy constructor to initialize and copy the values of object data members.
+
+ Theory:
+
+In C++, constructors are special functions that are automatically invoked when an object is created.
+
+
+Algorithm
+- Start
+- Define a class CopyConst with:
+- Private data members: x and y
+- A parameterized constructor to initialize x and y
+- A copy constructor to copy x and y from another object
+- A show() function to display the values of x and y
+- In the main() function:
+- Create object c1 using the parameterized constructor
+- Display c1's values using c1.show()
+- Create object c2 by copying c1 (copy constructor is called)
+- Display c2's values using c2.show()
+- End
+
+
+
