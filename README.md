@@ -67,3 +67,88 @@ Enhances code readability and maintainability.
 - Create an object obj of class construct which calls the default constructor
 - Call obj.display() to print the initialized values
 - End
+
+Program 3
+
+Aim:
+
+To write a C++ program to demonstrate the use of a parameterized constructor and a copy constructor to initialize and copy the data of objects.**
+
+ Theory:
+
+In Object-Oriented Programming (OOP), constructors are special functions used to initialize objects. This program demonstrates:
+ Parameterized Constructor:
+A constructor that takes arguments to initialize an object with specific values.
+Example:
+student(int rn, string nm, int fe)
+ Copy Constructor:
+
+A constructor that creates a new object by copying data from an existing object.
+It takes a reference to an object of the same class.
+Syntax:
+student(const student &t)
+The copy constructor is called:
+When an object is initialized from another object.
+When an object is passed by value to a function.
+When an object is returned by value.
+ Display Function:
+ A member function that prints the object's data.
+
+Algorithm:
+- Start
+- Define a class student with:
+- Data members: rno, name, and fee
+- A parameterized constructor to initialize these members
+- A copy constructor to copy data from another student object
+- A display() function to output the values
+- In main():
+- Create object s using the parameterized constructor
+- Call s.display() to show the initialized values
+- Create another object Student1 by copying s (this calls the copy constructor)
+- Call Student1.display() to show the copied values
+- End
+
+Program 4
+
+
+Aim:
+To write a C++ program to demonstrate the working of constructors and destructors by counting the number of objects created and destroyed.
+Theory:
+In Object-Oriented Programming (OOP), constructors and destructors are special member functions of a class:
+Constructor:
+A special function automatically called when an object is created.
+Used to initialize data members or perform setup tasks.
+Syntax:
+class_name() { ... }
+Destructor:
+A special function automatically called when an object goes out of scope or is explicitly deleted.
+Used to release resources or perform cleanup.
+Syntax:
+~class_name() { ... }
+
+ Global Variable count:
+
+Used to keep track of how many objects are currently alive.
+It is incremented in the constructor and decremented in the destructor.
+ Key Concepts Demonstrated:
+Scope: Objects inside a block {} are destroyed when the block ends.
+Order of destruction is reverse of object creation.
+Global tracking using a static/global variable.
+
+ Algorithm:
+- Start
+- Define a class deconstruct with:
+- A constructor that:
+-  Increments the global variable count
+- Displays the number of objects created
+- A destructor that:
+- Decrements count
+- Displays the number of objects destroyed
+- In the main() function:
+- Create object obj1
+- Create a block scope {}:
+- Create two more objects obj2 and obj3
+- These will be destroyed when the block ends
+- Create object obj4
+-  Observe constructor and destructor calls
+- End
