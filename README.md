@@ -32,3 +32,38 @@ cin.ignore(): Used to ignore the newline character left in the input buffer to a
 - Create an object s of class student which calls the constructor
 - Call s.display() to show the student data
 - End
+
+Program 2
+Aim:
+To write a C++ program that demonstrates the concept of default constructors by initializing data members of a class and displaying them using a member function.
+
+Theory:
+
+In Object-Oriented Programming (OOP), constructors are special member functions used to initialize objects of a class. This program specifically illustrates the use of a default constructor.
+Key Concepts
+Class: A blueprint for creating objects. It contains variables (data members) and functions (member functions).
+Constructor:
+Has the same name as the class.
+Is automatically invoked when an object is created.
+Can be used to initialize class members.
+This program uses a default constructor (no parameters).
+Access Specifiers:
+public: Allows the data and functions to be accessed from outside the class.
+Member Function (display):
+Used to print the values of the data members.
+Benefits of Using Constructors:
+Ensures automatic initialization of object data.
+Enhances code readability and maintainability.
+
+ Algorithm:
+-  Start
+- Define a class named construct with:
+- Public data members: a, b
+- A default constructor that:
+- Initializes a to 10
+- Initializes b to 20
+- A display() function to output the values of a and b
+- In the main() function:
+- Create an object obj of class construct which calls the default constructor
+- Call obj.display() to print the initialized values
+- End
